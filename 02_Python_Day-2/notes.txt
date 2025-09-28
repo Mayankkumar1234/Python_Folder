@@ -1,0 +1,49 @@
+
+String in Pyhton :-
+
+>>> username = "mayank"
+>>> username
+'mayank'
+>>> username = "chaiaurcode"
+>>> username
+'chaiaurcode'
+
+
+>>> print("Hello")
+Hello
+>>> "chai"*4
+'chaichaichaichai'
+>>> score = 400
+>>> score
+400 
+>>> tea   --> No variable exists in the file with this name
+Traceback (most recent call last):
+  File "<python-input-4>", line 1, in <module>
+    tea
+NameError: name 'tea' is not defined
+
+
+>>> import os
+>>> os.getcwd()
+'C:\\Users\\hp\\Desktop\\PythonPractise\\02_Python_Day-2'
+>>> for c of chai
+  File "<python-input-8>", line 1
+    for c of chai
+          ^^
+SyntaxError: invalid syntax      
+>>> for c in "chai"
+  File "<python-input-9>", line 1
+    for c in "chai"
+                   ^
+SyntaxError: expected ':'        
+>>> for c in "chai":
+...     print(c)
+...     
+c   
+h   
+a   
+i   
+>>> import sys
+>>> sys.platform
+'win32'
+>>>    

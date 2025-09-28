@@ -128,3 +128,21 @@ print(f"Index of 'ro': {index_not_found}")  # Output: Index of 'ro': -1
 
 #  Replace the double space in a string wih single space
 
+
+
+# Escape characters in Python are used to insert characters that are illegal in a string.
+
+# Common escape characters:
+# \n : Newline
+# \t : Tab
+# \\ : Backslash
+# \' : Single quote
+# \" : Double quote
+
+# Examples:
+
+print("Hello\nWorld")      # Newline
+print("Tab\tSpace")        # Tab
+print("This is a backslash: \\")  # Backslash
+print('It\'s a string')    # Single quote
+print("He said, \"Hello\"") # Double quote

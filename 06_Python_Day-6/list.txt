@@ -1,0 +1,201 @@
+List in python _ It is similar to array in js , It follow zero based indexing..
+
+
+tea_variaties = ["Black", "Green", "Oolong", "White"]
+>>> tea_variaties
+['Black', 'Green', 'Oolong', 'White']
+>>> print(tea_varities)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    import platform                                    mean: 'tea_variaties'?
+          ^^^^^^^^^
+NameError: name 'tea_varities' is not defined. Did you 
+mean: 'tea_variaties'?
+>>> print(tea_variaties)
+['Black', 'Green', 'Oolong', 'White']
+>>> print(tea_variaties[0])  // It prints the first value ib the List
+Black
+>>> print(tea_variaties[1])
+Green
+>>> print
+<built-in function print>
+>>> ()
+()
+>>>
+>>> 
+>>> print(type(tea_variaties[2]))  // It checks the type of the value
+<class 'str'>
+>>>
+>>> tea_variaties = ["Black", "Green", "Oolong", "White"]
+>>> tea_variaties
+['Black', 'Green', 'Oolong', 'White']
+>>> print(tea_varities)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    import platform
+          ^^^^^^^^^
+NameError: name 'tea_varities' is not defined. Did you 
+mean: 'tea_variaties'?
+>>> 
+ *  History restored 
+>>> tea_variaties = ["Black", "Green", "Oolong"]
+>>> tea_varaities
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    import platform
+    ^^^^^^^^^^^^^
+NameError: name 'tea_varaities' is not defined. Did you mean: 'tea_variaties'?
+>>> tea_variaties
+['Black', 'Green', 'Oolong']
+>>> print(tea_variaties) 
+['Black', 'Green', 'Oolong']
+>>> print(tea_variaties[-1])   // -1 starts from the end of the array
+Oolong
+>>> print(tea_variaties[1:2]) 
+['Green']
+>>> tea_variaties[1:1] =["test","test"]  // It start from the first index and print the value from first
+>>> tea_variaties
+['Black', 'test', 'test', 'Green', 'Oolong']
+>>> tea_variaties[1:3] = []
+>>> tea_variaties
+['Black', 'Green', 'Oolong']
+>>> tea_variaties[3] = "white"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    import platform
+IndexError: list assignment index out of range
+>>> clear()
+
+
+>>> tea_variaties =["Black", "Green", "Oolong","Herbal"]
+>>> tea_variaties
+['Black', 'Green', 'Oolong', 'Herbal']
+>>> tea_variaties[1:2]= "Lemon"   // It will treat the string as an array of the chars and add all the value at 1 index
+>>> tea_variaties
+['Black', 'L', 'e', 'm', 'o', 'n', 'Oolong', 'Herbal']
+>>> tea_variaties = ["Black", "Green", "Oolong", "Herbal"]
+>>> tea_variaties
+['Black', 'Green', 'Oolong', 'Herbal']
+>>> tea_variaties[1:2] = [Lemon""]
+  File "<stdin>", line 1
+    tea_variaties[1:2] = [Lemon""]
+                               ^^
+SyntaxError: invalid syntax
+>>> tea_variaties[1:2]= ["lemon"]   // To the string as  a single value we have to pass this in an array
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> for tea in tea_variaties
+  File "<stdin>", line 1
+    for tea in tea_variaties
+                            ^
+SyntaxError: expected ':'
+>>> for tea in tea_variaties:
+...     print(tea)
+...
+Black
+lemon
+Oolong
+Herbal
+>>> for tea in tea_variaties:
+...     print(tea , end="-")   // It ends the every value with this...
+... 
+Black-lemon-Oolong-Herbal->>> 
+>>> if "Masala" in tea_variaties:
+...     print("Yes it is there")   // It is a condition it checks if this value exists or not!
+... 
+>>> if "Oolong" in tea_variaties:
+...     print("It is in the array")
+... 
+It is in the array
+ 
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> tea_variaties.append("Masala")
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal', 'Masala']
+>>> tea_variaties.pop()
+'Masala'
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> tea_variaties.remove("lemon") 
+>>> tea_variaties
+['Black', 'Oolong', 'Herbal']
+>>> tea_variaties.insert(1, "green")
+>>> tea_variaties
+['Black', 'green', 'Oolong', 'Herbal']
+>>> tea_variaties.insert(2, "masala")
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties_copy = tea_variaties.copy()
+>>> tea_variaties_copy.pop()
+'Herbal'
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties_copy
+['Black', 'green', 'masala', 'Oolong']
+
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal', 'Masala']
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> tea_variaties.append("Masala")
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal', 'Masala']
+>>> tea_variaties.pop()
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> tea_variaties.append("Masala")
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal', 'Masala']
+>>> tea_variaties.pop()
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal', 'Masala']
+>>> tea_variaties.pop()
+>>> tea_variaties.pop()
+'Masala'
+>>> tea_variaties
+['Black', 'lemon', 'Oolong', 'Herbal']
+>>> tea_variaties.remove("lemon")
+>>> tea_variaties
+['Black', 'Oolong', 'Herbal']
+>>> tea_variaties.insert(1, "green")
+>>> tea_variaties
+['Black', 'green', 'Oolong', 'Herbal']
+>>> tea_variaties.insert(2, "masala")
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties_copy = tea_variaties.copy()
+>>> tea_variaties_copy.pop()
+'Herbal'
+>>> tea_variaties
+['Black', 'green', 'masala', 'Oolong', 'Herbal']
+>>> tea_variaties_copy
+['Black', 'green', 'masala', 'Oolong']
+>>> tea = ["chai", "garam"];
+>>> chai = ["tea","hot"];
+>>> chai = tea
+>>> chai
+['chai', 'garam']
+>>> chai.pop()
+'garam'
+>>> tea 
+['chai']
+>>> tea.pop()
+'chai'
+>>> chai
+[]  
+>>> tea
+[]  
+>>> range(10)
+range(0, 10)
+>>> print(range(10))
+range(0, 10)
+>>> val = range(10)
+>>> val
+range(0, 10)
+>>> squared_num = [x**2 for x in range(10)]
+>>> squared_num
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
